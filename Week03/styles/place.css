@@ -72,7 +72,7 @@ header h1 {
     max-width: 300px;
 }
 
-.overlay h3 {
+.overlay h2 {
     background-color: #24f0ec;
     padding: 0.5rem 1.5rem;
     border-radius: 6px;
@@ -104,7 +104,7 @@ header h1 {
     
 }
 
-.weather-box h4 {
+.weather-box h3 {
     display: flex;
     align-items: center;
     gap: 8px;
@@ -114,7 +114,7 @@ header h1 {
     margin-bottom: 1rem;
 }
 
-.weather-box h4::before {
+.weather-box h3::before {
     content: "☀️";
     display: inline-block;
     width: 24px;
@@ -168,7 +168,7 @@ section {
         position: relative;
     }
 
-    .weather-box h4::before {
+    .weather-box h3::before {
         content: "";
         display: inline-block;
         width: 24px;
