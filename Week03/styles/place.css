@@ -6,7 +6,7 @@
 
 :root {
     --main-color: #24f0ec;
-    --background: var(--overlay-bg);
+    --overlay-bg: rgba(255, 255, 255, 0.3);
     --overlay-border: rgba(255, 255, 255, 0.4);
     --text-color:#000;
     --font-family: "Open Sans", Arial, Helvetica, sans-serif;
@@ -21,6 +21,11 @@ body {
     display: flex;
     flex-direction: column;
     min-height: 100vh;
+}
+
+body::after {
+    content: "";
+    display: block;
 }
 
 main {
