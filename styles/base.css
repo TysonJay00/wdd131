@@ -14,9 +14,20 @@ nav ul {
     gap: 20px;
 
 }
+header {
+    background-color: gray; 
+    padding: 1rem;
+    text-align: center;
+    border-bottom: 2px solid black;
+}
 
 body {
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: "Open Sans" Arial, Helvetica, sans-serif;
+}
+
+h1, h2, h3 {
+    font-family: "Open Sans" Arial, Helvetica, sans-serif;
+
 }
 
 h1 {
@@ -69,6 +80,7 @@ nav a:hover {
 
 
 main {
+    display: grid;
     background: lightgray; 
     max-width: 900px;
     margin: 0 auto;
