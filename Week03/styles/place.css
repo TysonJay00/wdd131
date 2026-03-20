@@ -7,7 +7,7 @@
 :root {
     --main-color: #24f0ec;
     --overlay-bg: rgba(255, 255, 255, 0.3);
-    --ovrlay-border: rgba(255, 255, 255, 0.4);
+    --ovrelay-border: rgba(255, 255, 255, 0.4);
     --text-color:#000;
     --font-family: "Open Sans", Arial, Helvetica, sans-serif;
 }
