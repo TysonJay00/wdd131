@@ -116,7 +116,7 @@ footer {
     
     padding: 2rem;
     text-align: center;
-   border: 2px solid black
+    border: 2px solid black
 
 }
 
@@ -127,6 +127,8 @@ img {
     width: 200px;
     height: auto;
     display: block;
+    background: blue;
+    animation: fade 1s ease-in;
 
 }
 
@@ -141,14 +143,83 @@ img {
 
 .row img {
     width: 300px;
+    max-width: 100%;
     height: auto;
+
 }
 
 .reverse {
     border: 5px solid orange;
+    flex-direction: row-reverse;
+    
 }
 
 .text {
     flex: 1;
 }
 
+
+
+@keyframes fade {
+    0% {
+      opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+@media (max-width:600px) {
+    .header-top {
+        flex-direction: column;
+        gap: 10px;
+        text-align: center;
+
+    }
+
+    .navigation {
+        flex-direction: column;
+        padding: 0;
+
+    }
+
+    .row {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .reverse {
+        flex-direction: column;
+
+    }
+
+    .row img {
+        width: 100%;
+        max-width: 300px;
+    }
+}
+
+@media (max-width: 900px) and (min-width: 601px) {
+    .row {
+        flex-direction: column;
+
+    }
+
+    .reverse {
+        flex-direction: column;
+    }
+
+    .header-top {
+        flex-wrap: wrap;
+    }
+}
+
+@media (min-width: 1200px) {
+    .page {
+        max-width: 1100px;
+    }
+    .row img {
+        width:350px;
+    }
+}

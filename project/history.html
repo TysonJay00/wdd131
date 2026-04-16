@@ -6,7 +6,6 @@
     <title>History Page</title>
     <meta name="description" content="This page explains information on the National Hockey League team, The Edmonton Oilers. Such as the history and stats.">
     <meta name="author" content="Tyson Wilde">
-    <title>Final Project</title>
     <link rel="stylesheet" href="styles/siteplan.css">
     <script src="scripts/siteplan.js" defer></script>
 </head>
@@ -29,10 +28,10 @@
 
         <nav>
             <ul class="navigation">
-                <li><a href="http://127.0.0.1:5501/project/siteplan.html" title="Home">Home</a></li>
-                <li><a href="http://127.0.0.1:5501/project/history.html" title="History">History</a></li>
-                <li><a href="http://127.0.0.1:5501/project/stats.html" title="Statistics">Statistics</a></li>
-                <li><a href="http://127.0.0.1:5501/project/profit.html" title="Profitability">Profits</a></li>
+                <li><a href="siteplan.html" title="Home">Home</a></li>
+                <li><a href="history.html" title="History">History</a></li>
+                <li><a href="stats.html" title="Statistics">Statistics</a></li>
+                <li><a href="profit.html" title="Profitability">Profits</a></li>
                 
 
             </ul>
@@ -41,7 +40,11 @@
         <main>
 
         <section class="row">
-            <img src="images/oilers1.jpeg" alt="Photo of Alberta Oilers">
+            <picture>
+                <source srcset="images/oilers1.jpeg" media="(max-width: 600px)">
+                <source srcset="images/oilers1-medium.jpg" media="(max-width: 1000px)">
+                <img src="images/oilers1-large.jpg" alt="Photo of Alberta Oilers" loading="lazy">
+            </picture>
 
             <div class="text">
                 <h2>The Beginning of the Edmonton Oilers</h2>
@@ -52,12 +55,17 @@
         </section>    
            
         <section class="row reverse">
+            
+            <picture>
+                <source srcset="images/billhunter.jpg" media="(max-width: 600px)">
+                <source srcset="images/billhunter-medium.jpg" media="(max-width: 1000px)">
+                <img src="images/billhunter-large.jpg" alt="Photo of Bill Hunter" loading="lazy">
+            </picture>
+
             <div class="text">
                 <h2>The Original Ownership of the Oilers</h2>
                 <p>The original owners of the franchise were Bill and Daryl Hunter. Bill was a hockey player and promoter for the sport. He helped invest in the World Hockey Association, and helped start a franchise in Edmonton. He and his son, Darryl, were responsible for the team's name. They chose the Oilers because Alberta's economy was reliant on Oil from the province's vast resource in petroleum.   </p>
             </div>
-            
-            <img src="images/billhunter.jpg" alt="Photo of Bill Hunter">
          
             </section>
 
@@ -66,7 +74,7 @@
         <footer>
         <p>&copy; 2026 Tyson Wilde. Canada</p>
         <p>Last modified: <span id="lastModified"></span></p>
-        <p>Reference page: http://127.0.0.1:5501/project/references.html</p>
+        <p><a href="references.html">Reference Page</a></p>
         </footer>
 
     </div>

@@ -29,10 +29,10 @@
 
         <nav>
             <ul class="navigation">
-                <li><a href="http://127.0.0.1:5501/project/siteplan.html" title="Home">Home</a></li>
-                <li><a href="http://127.0.0.1:5501/project/history.html" title="History">History</a></li>
-                <li><a href="http://127.0.0.1:5501/project/stats.html" title="Statistics">Statistics</a></li>
-                <li><a href="http://127.0.0.1:5501/project/profit.html" title="Profitability">Profits</a></li>
+                <li><a href="siteplan.html" title="Home">Home</a></li>
+                <li><a href="history.html" title="History">History</a></li>
+                <li><a href="stats.html" title="Statistics">Statistics</a></li>
+                <li><a href="profit.html" title="Profitability">Profits</a></li>
                 
 
             </ul>
@@ -40,8 +40,11 @@
 
         <main>
             <section class="row">
-            <img src="images/oilersfans.jpg" alt="Photo of Oilers Fans">
-
+            <picture>
+                <source srcset="images/oilersfans.jpg" media="(max-width: 600px)">
+                <source srcset="images/oilersfans-medium.jpg" media="(max-width: 1000px)">
+                <img src="images/oilersfans-large.jpg" alt="Photo of Oilers Fans" loading="lazy"> 
+            </picture>
             <div class="text">
                 <h2>All About The Oilers</h2>
                 <p>
@@ -52,6 +55,12 @@
         </section>    
            
         <section class="row reverse">
+            <picture>
+                <source srcset="images/map.jpg" media="(max-width: 600px)">
+                <source srcset="images/map-medium.jpg" media="(max-width: 1000px)">
+                <img src="images/map-large.jpg" alt="Photo of Edmonton" loading="lazy">
+            </picture>
+
             <div class="text">
                 <h2>Potentially Asked Questions</h2>
                 
@@ -62,9 +71,18 @@
                
               
             </div>
-            
-            <img src="images/map.jpg" alt="Photo of Edmonton">
-         
+            </section>
+
+            <section class="favourites">
+                <h2>Favourite Oilers Player</h2>
+                <label for="playerSelect">Choose your favourite Oilers player:</label>
+                <select id="playerSelect">
+                    <option value="">--choose a player--</option>
+                </select>
+
+                <button id="save">Save Favourite Player</button>
+
+                <p id="output"></p>
             </section>
 
         </main>
@@ -72,7 +90,7 @@
         <footer>
         <p>&copy; 2026 Tyson Wilde. Canada</p>
         <p>Last modified: <span id="lastModified"></span></p>
-        <p>Reference page: http://127.0.0.1:5501/project/references.html</p>
+        <p><a href="references.html">Reference Page</a></p>
         </footer>
 
     </div>

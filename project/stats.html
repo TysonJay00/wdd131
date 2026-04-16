@@ -6,7 +6,6 @@
     <title>Statistics Page</title>
     <meta name="description" content="This page explains information on the National Hockey League team, The Edmonton Oilers. Such as the history and stats.">
     <meta name="author" content="Tyson Wilde">
-    <title>Final Project</title>
     <link rel="stylesheet" href="styles/siteplan.css">
     <script src="scripts/siteplan.js" defer></script>
     
@@ -30,10 +29,10 @@
 
         <nav>
             <ul class="navigation">
-                <li><a href="http://127.0.0.1:5501/project/siteplan.html" title="Home">Home</a></li>
-                <li><a href="http://127.0.0.1:5501/project/history.html" title="History">History</a></li>
-                <li><a href="http://127.0.0.1:5501/project/stats.html" title="Statistics">Statistics</a></li>
-                <li><a href="http://127.0.0.1:5501/project/profit.html" title="Profitability">Profits</a></li>
+                <li><a href="siteplan.html" title="Home">Home</a></li>
+                <li><a href="history.html" title="History">History</a></li>
+                <li><a href="stats.html" title="Statistics">Statistics</a></li>
+                <li><a href="profit.html" title="Profitability">Profits</a></li>
                 
 
             </ul>
@@ -42,11 +41,15 @@
         <main>
 
         <section class="row">
-            <img src="images/oilerscup.jpg" alt="Photo of Oilers Holding Cup">
+            <picture>
+                <source srcset="images/oilerscup.jpg" media="(max-width: 600px)">
+                <source srcset="images/oilerscup-medium.jpg" media="(max-width: 1000px)">
+                <img src="images/oilerscup-large.jpg" alt="Photo of Oilers Holding Stanley Cup" loading="lazy">
+            </picture>
 
             <div class="text">
                 <h2>Stats By Team</h2>
-                <p>• Number of Stanley Cups: 5 Cups(1984, 1985, 1987, 1988, 1990)</p>
+                <p>• Number of Stanley Cups: 5 Cups (1984, 1985, 1987, 1988, 1990)</p>
                 <p>• Number of Playoff Appearances: 27 Seasons</p> 
                 <p>• Overall Record in the Stanley Cup Finals: 5-4 (55.6%)</p> 
                 <p>• Record:_____GP-W-L-OTL-SOL</p> 
@@ -54,7 +57,14 @@
             </div>
         </section>    
            
-        <section class="row reverse">
+        <section class="row reverse"
+            
+            <picture>
+                <source srcset="images/gretzky.jpg" media="(max-width: 600px)">
+                <source srcset="images/gretzky-medium.jpg" media="(max-width: 1000px)">
+                <img src="images/gretzky-large.jpg" alt="Photo of Wayne Gretzky" loading="lazy">
+            </picture>
+
             <div class="text">
                 <h2>Stats By Player</h2>
                 <p>• Team Goals Leader: Wayne Gretzky(583 goals)</p>
@@ -66,8 +76,6 @@
                 <p>• Goalie with most Wins in a Season: Cam Talbot(42 Wins)</p>
               
             </div>
-            
-            <img src="images/gretzky.jpg" alt="Photo of Wayne Gretzky">
          
             </section>
 
@@ -76,7 +84,7 @@
         <footer>
         <p>&copy; 2026 Tyson Wilde. Canada</p>
         <p>Last modified: <span id="lastModified"></span></p>
-        <p>Reference page: http://127.0.0.1:5501/project/references.html</p>
+        <p><a href="references.html">Reference Page</a></p>
         </footer>
 
     </div>

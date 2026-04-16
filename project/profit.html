@@ -29,10 +29,10 @@
 
         <nav>
             <ul class="navigation">
-                <li><a href="http://127.0.0.1:5501/project/siteplan.html" title="Home">Home</a></li>
-                <li><a href="http://127.0.0.1:5501/project/history.html" title="History">History</a></li>
-                <li><a href="http://127.0.0.1:5501/project/stats.html" title="Statistics">Statistics</a></li>
-                <li><a href="http://127.0.0.1:5501/project/profit.html" title="Profitability">Profits</a></li>
+                <li><a href="siteplan.html" title="Home">Home</a></li>
+                <li><a href="history.html" title="History">History</a></li>
+                <li><a href="stats.html" title="Statistics">Statistics</a></li>
+                <li><a href="profit.html" title="Profitability">Profits</a></li>
                 
 
             </ul>
@@ -41,17 +41,28 @@
         <main>
 
         <section class="row">
-            <img src="images/arena1.jpg" alt="Photo of Ice Rink">
+            <picture>
+                <source srcset="images/arena1.jpg" media="(max-width: 600px)">
+                <source srcset="images/arena1medium.jpg" media="(max-width: 1000px)">
+                <img src="images/arena1-large.jpg" alt="Photo of Ice Rink" loading="lazy">
+            </picture>
 
             <div class="text">
                 <h2>General Profits</h2>
-                <p>The Edmonton Oilers have a net worth of 3.2 billion U.S dollars (4.4 billion CAD). The team's revenue coming in at 431 million U.S Dollars (592 million CAD), and the annual income for the team was 244 million US dollars (335 million CAD), makes the Edmonton Oilers the most profitable team in the NHL in 2025-2026.   
+                <p>The Edmonton Oilers have a net worth of 3.2 billion U.S dollars (4.4 billion CAD). The team's revenue coming in at 431 million U.S Dollars (592 million CAD), and the annual income for the team was 244 million US dollars (335 million CAD), makes the Edmonton Oilers the most profitable team in the NHL in 2025-2026.</p>   
                 
             </div>
         </section>    
            
         <section class="row reverse">
-            <div class="text">
+            
+            <picture>
+                <source srcset="images/arena.jpg" media="(max-width: 600px)">
+                <source srcset="images/arena-medium.jpg" media="(max-width: 1000px)">
+                <img src="images/arena-large.jpg" alt="Photo of Rogers Place" loading="lazy">
+            </picture>
+
+             <div class="text">
                 <h2>Additional Profits and Expenses</h2>
                 <p>• Total Cost of Rogers Place: 613.7 Million Dollars</p>
                 <p>• Seating Capacity: 18,347 Seats</p>
@@ -60,8 +71,6 @@
               
 
             </div>
-            
-            <img src="images/arena.jpg" alt="Photo of Rogers Place">
          
             </section>
 
@@ -70,7 +79,7 @@
         <footer>
         <p>&copy; 2026 Tyson Wilde. Canada</p>
         <p>Last modified: <span id="lastModified"></span></p>
-        <p>Reference page: http://127.0.0.1:5501/project/references.html</p>
+        <p><a href="references.html">Reference Page</a></p>
         </footer>
 
     </div>
